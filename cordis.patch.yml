@@ -1,0 +1,10 @@
+# Loader patch for the dsh-session-sweeper bundle. All keys optional.
+- insert:
+    - id: dsh-session-sweeper
+      name: 'dsh-session-sweeper'
+      config:
+        # Default $DSH_HOME is ~/.dsh; set dshHome only if yours differs.
+        # dshHome: /Users/<you>/.dsh
+        # Minutes during which a recently-touched write-lease lock marks a
+        # session as live (protected from deletion). Default 10 in code.
+        # trashDir: override the trash destination (tests / non-macOS).
